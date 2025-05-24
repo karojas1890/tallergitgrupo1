@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Participantes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Participantes</h1>
+        
+        <form id="registroForm">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="apellido1">Primer Apellido:</label>
+                <input type="text" id="apellido1" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="apellido2">Segundo Apellido:</label>
+                <input type="text" id="apellido2">
+            </div>
+            
+            <div class="form-group">
+                <label for="grupo">Grupo (1-5):</label>
+                <select id="grupo" required>
+                    <option value="">Seleccione...</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            
+            <button type="submit">Registrarse</button>
+        </form>
+        
+        <div id="mensaje"></div>
+        
+        <div class="integrantes-section">
+            <h2>Páginas de Integrantes</h2>
+            <div class="botones-integrantes">
+                <a href="integrantes/a.html" class="boton-integrante">Integrante A</a>
+                <a href="integrantes/b.html" class="boton-integrante">Integrante B</a>
+                <a href="integrantes/c.html" class="boton-integrante">Integrante C</a>
+                <a href="integrantes/d.html" class="boton-integrante">Integrante D</a>
+                <a href="integrantes/e.html" class="boton-integrante">Integrante E</a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
